@@ -1,3 +1,123 @@
 * {
     margin: 0;
-}
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container {
+    width: 915px;
+    height: 620px;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  div {
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+  }
+  .grid {
+    width: 815px;
+    height: 520px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(5, 100px);
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas:
+      "box1 box2 box2 box2"
+      "box3 box4 box5 box6"
+      "box7 box8 box9 box10"
+      "box11 box12 box13 box14"
+      "box15 box16 box17 box18";
+  }
+  .item-1 {
+    grid-area: box11;
+    background-color: #fff;
+  }
+  .item-2 {
+    grid-area: box12;
+    background-color: #fff;
+  }
+  .item-3 {
+    grid-area: box13;
+    background-color: #fff;
+  }
+  .item-4 {
+    grid-area: box7;
+    background-color: #fff;
+  }
+  .item-5 {
+    grid-area: box8;
+    background-color: #fff;
+  }
+  .item-6 {
+    grid-area: box9;
+    background-color: #fff;
+  }
+  .item-7 {
+    grid-area: box3;
+    background-color: #fff;
+  }
+  .item-8 {
+    grid-area: box4;
+    background-color: #fff;
+  }
+  .item-9 {
+    grid-area: box5;
+    background-color: #fff;
+  }
+  .item-17 {
+    grid-area: box1;
+    background-color: pink;
+  }
+  .item-18 {
+    grid-area: box2;
+    background-color: grey;
+  }
+  .item-10 {
+    grid-area: box15;
+    background-color: white;
+  }
+  .item-11 {
+    grid-area: box16;
+    background-color: white;
+  }
+  .item-12 {
+    grid-area: box17;
+    background-color: greenyellow;
+  }
+  .item-14 {
+    grid-area: box6;
+    background-color: white;
+  }
+  .item-15 {
+    grid-area: box10;
+    background-color: white;
+  }
+  .item-16 {
+    grid-area: box14;
+    background-color: white;
+  }
+  .item-13 {
+    grid-area: box18;
+    background-color: white;
+  }
+  .click1:hover {
+    background-color: blueviolet;
+  }
+  .click1,
+  .click2 {
+    transition: 0.5s;
+  }
+  .click2:hover {
+    background-color: darkgoldenrod;
+  }
+  .item-17:hover {
+    background-color: red;
+  }
